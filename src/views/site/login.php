@@ -6,24 +6,23 @@
 
 
 use App\Models\LoginForm;
+use App\Widgets\ActiveForm;
 use yii\helpers\Html;
 use yii\web\View;
-use yii\widgets\ActiveForm;
 
 /** @var $this View */
 /** @var $model LoginForm */
 
-$this->title = 'Login';
+$this->title = '登录';
 $this->params['breadcrumbs'][] = $this->title;
+
 ?>
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>Please fill out the following fields to login:</p>
+    <p>填写下面的表单登录:</p>
 
-    <?php $form = ActiveForm::begin([
-        'enableClientScript' => false
-    ]); ?>
+    <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
 
@@ -32,13 +31,12 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= $form->field($model, 'rememberMe')->checkbox() ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+        <?= Html::submitButton('登录', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
 
-    <div>
-        You may login with <strong>admin/admin</strong> or <strong>demo/demo</strong>.<br>
-        To modify the username/password, please check out the code <code>app\models\User::$users</code>.
+    <div class="alert alert-warning">
+        使用 <strong>admin/admin</strong> 或 <strong>demo/demo</strong> 登录
     </div>
 </div>
