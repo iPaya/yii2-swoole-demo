@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/yii2-swoole-http-server-demo.iml" filepath="$PROJECT_DIR$/.idea/yii2-swoole-http-server-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/yii2-swoole-demo.iml" filepath="$PROJECT_DIR$/.idea/yii2-swoole-http-server-demo.iml" />
     </modules>
   </component>
 </project>
