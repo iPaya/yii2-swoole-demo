@@ -37,7 +37,7 @@ return [
             'identityClass' => 'App\Models\User',
         ],
         'urlManager' => [
-            'enablePrettyUrl' => true,
+            'enablePrettyUrl' => false,
             'showScriptName' => false,
         ],
         'errorHandler' => [
